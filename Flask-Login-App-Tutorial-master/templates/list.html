@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 1>
+         <thead>
+            <td>ID</td>
+            <td>Password</td>
+            <td>Name</td>
+            <td>Visit Date</td>
+            <td>Health</td>
+            <td>Medication</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["pid"]}}</td>
+               <td>{{row["password"]}}</td>
+               <td> {{ row["pname"]}}</td>
+               <td>{{row['visit']}}</td>
+               <td>{{row['health']}}</td>
+               <td>{{row['medication']}}</td>   
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/logout">Logout</a>
+   </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+   <body>
+      <form action = "{{ url_for('addrec') }}" method = "POST">
+         <h3>Student Information</h3>
+         ID<br>
+         <input type = "number" name = "id" /></br>
+         
+         Password<br>
+         <input type = "text" name = "psswd" /><br>
+         
+         Name<br>
+         <input type = "text" name = "nme" /><br>
+         
+         <!-- Visit Date<br>
+         <input type = "date" name = "pin" /><br> -->
+
+         Health<br>
+         <input type = "text" name = "hlth" /><br>
+
+         Medication<br>
+         <input type = "text" name = "medicine" /><br>
+
+         Health Value<br>
+         <input type = "number" name = "val" step="any" /><br>
+
+         <input type = "submit" value = "submit" /><br>
+      </form>
+   </body>
+</html>
